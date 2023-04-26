@@ -1,0 +1,7 @@
+<script>
+    const horasTrabalhadas = Number(prompt(`Informe quantas horas você trabalha`));
+    const salarioHora = Number(prompt(`Informe quantos você recebe por horas trabalhadas`));
+    const salarioMensal = horasTrabalhadas * salarioHora;
+    const salarioLiquido = salarioMensal - salarioMensal * 0.08 - salarioMensal * 0.11;
+    alert(`Seu salário líquido mensal é de ${salarioLiquido.toFixed(2)}`);
+</script>
